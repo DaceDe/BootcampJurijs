@@ -8,7 +8,7 @@ public class DBUtil {
 
     public static final String URL = "jdbc:mysql://localhost:3306/bootcamp";
     public static final String USER = "root";
-    public static final String PASSWORD = "password";
+    public static final String PASSWORD = "abcd1234";
 
     public static Connection acquireConnection() {
         try {
@@ -18,6 +18,7 @@ public class DBUtil {
             e.printStackTrace();
             throw new RuntimeException(e);
         }
+        
     }
 
 }
